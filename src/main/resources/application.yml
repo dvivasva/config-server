@@ -1,0 +1,16 @@
+spring:
+  main:
+    web-application-type: reactive
+  application:
+   name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dvivasva/config-server.git
+          deafult-label: main
+  profile:
+     active: dev
+server:
+  port: 8888
+
