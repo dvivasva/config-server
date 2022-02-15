@@ -1,16 +1,24 @@
+server:
+  port: 8888
 spring:
-  main:
-    web-application-type: reactive
+  #main:
+    #web-application-type: reactive
   application:
    name: config-server
+  #secutiry:
+   # user:
+      #name: dvivasva
+      #password: nttdata
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/dvivasva/config-server.git
+          uri: https://github.com/dvivasva/config-yam.git
           deafult-label: main
-  profile:
-     active: dev
-server:
-  port: 8888
+          #username:
+          #password:
+
+ #profiles:
+     #active:
+
 

@@ -1,3 +1,5 @@
+server:
+  port: 8888
 spring:
   #main:
     #web-application-type: reactive
@@ -11,16 +13,12 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/dvivasva/config-server.git
+          uri: https://github.com/dvivasva/config-yam.git
           deafult-label: main
           #username:
           #password:
 
-  #profiles:
+ #profiles:
      #active:
-  data:
-    mongodb:
-      uri: ${data.mongodb.uri}
-server:
-  port: 8888
+
 
